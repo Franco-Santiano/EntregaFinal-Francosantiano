@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* NavBar */
+header{
+    height: 7vh;
+}
+.navbar {
+    background-color: #9d0b51;
+    border-radius: 20px;
+    box-shadow: 2px 2px 25px #E44EC3 ;
+}
+.nav-link{
+    color: aliceblue;
+}
+.navbar-brand{
+    font-size: x-large;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    padding-left: 50px;
+    color: rgba(240, 248, 255, 0.733) !important;
+}
+.navbar-collapse{
+    font-family: 'Istok Web', sans-serif;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+
+.icon-config{
+    width: 40px;
+    height: 40px;
+}
+
+.nav-link:hover{
+    text-shadow: 3px 3px 10px black;
+    transition: 0,3ms;
+}
+.dropdown-menu{
+    background-color: #9d0b51 !important;
+}
+.dropdown-item{
+    color: aliceblue;
+}
+
+.dropdown-item:hover{
+    text-shadow: 3px 3px 10px black;
+    transition: 0,3ms;
+    background-color: transparent;
+}
+
+/* MainContent */
+.body{
+    font-family: 'PT Mono', monospace;
+    background-color: #1b0112 ;
+}
+.img-config {
+    margin-top: 1%;
+    height: 25vh !important;
+}
+.badge{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #e3ecec !important;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 100%;
+}
+.main-title{
+    width: 70%;
+    margin: 0 auto;
+}
