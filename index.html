@@ -55,7 +55,7 @@
                                     <a class="nav-link" href="./pages/store.html">Store</a>
                                 </li>
                             </ul>
-                            <hr class="text-black ms-5">
+                            <hr class="text-black">
                             <!-- boton modo oscuro mobile -->
                             <form class=" d-flex ps-0 container-fluid justify-content-end ">
                                 <button class="btn p-2  m-0 d-lg-none " type="button"><img class= "icon-config" src="./assets/icons/luna.png" alt="lightmode"></button>
@@ -73,7 +73,7 @@
                     </nav>
             </header>
 
-            <main class="mt-4 mt-sm-4">
+            <main class="main-content mt-4 mt-sm-4">
               <!-- Banner de portada -->
               <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <article class="carousel-inner ">
@@ -95,66 +95,150 @@
                   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next"></button>
                 </article>
               </section>
+              <!-- Titulo Principal -->
               <section>
-                <article class="main-title">
-                  <h1><span class="badge rounded-pill text-bg-light me-5 ms-5"><h2>GAMZ eSports</h2></span></h1>
+                <article class="titulo-principal">
+                  <h1><span><h2 class="text-center">GAMZ eSports</h2></span></h1>
                 </article>
               </section>
-              
               <!-- Cards de comentarios -->
-              <section>
-
-                <article class="card mb-3 ms-5" style="max-width: 540px;">
-                  <div class="row g-0">
-                    <div class="col-lg-4">
-                      <img src="" class="img-fluid rounded-start" alt="ceologo">
-                    </div>
-                    <article class="col-lg-8">
-                      <div class="card-body">
-                        <h5 class="card-title"></h5>
-                      <p class="card-text"></p>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis id obcaecati facilis errordsds cum dicta rem tempora? Et, ipsa dolor.</p>
+              <section class="d-flex coment-box flex-column position-relative">
+                <article class="card coment-box-1 mb-3 m-3 " style="max-width: 90%;">
+                  <article class="row">
+                  <div class="col-lg-2">
+                    <img class="img-comentarios" src="./assets/images/persona1.jpg" class="img-fluid rounded-start" alt="ceologo">
+                  </div>
+                  <article class="col-lg-10">
+                    <div class="card-body">
+                      <h5 class="card-title">Ibai LLanos</h5>
+                      <p class="card-text">Streamer and Caster Profesional</p>
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem architecto ut provident quo nesciunt impedit sint repellat ipsam delectus ea! Voluptates adipisci, nemo quam quibusdam commodi, consequatur in inventore hic culpa iure est laboriosam consectetur quis similique sit! Consequatur, quas.</p>
+                      <div class="d-flex justify-content-end position-absolute bottom-0 end-0">
+                        <a class="me-4 mb-2" href=""><img height="20px" src="./assets/icons/instagram.png" alt="instagram"></a>
+                        <a class="me-4 mb-2" href=""><img height="20px" src="./assets/icons/linkedin.png" alt="instagram"></a>
+                        <a class="me-4 mb-2" href=""><img height="20px" src="./assets/icons/gorjeo.png" alt="instagram"></a>
+                      </div>
                     </div>
                   </article>
-                </div>
+                </article>
               </article>
               
-              <article class="card mb-3 ms-5" style="max-width: 540px;">
-                <article class="row g-0">
-                <div class="col-lg-4">
-                  <img src="" class="img-fluid rounded-start" alt="ceologo">
-                </div>
-                <article class="col-lg-8">
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis id obcaecati facilis errordsds cum dicta rem tempora? Et, ipsa dolor.</p>
+              <article class="card coment-box-2  mb-3 m-3 align-self-end" style="max-width:90%;">
+                <article class="row">
+                <div class="col-lg-10 ">
+                  <div class="card-body text-end">
+                    <h5 class="card-title">Juana Azurduy</h5>
+                    <p class="card-text">Marketing Ingeniere - Ceo GAMZ</p>
+                    <p class="card-text ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sequi sint veniam et atque! Magni officiis consequatur, molestias veritatis quas delectus illum odit totam fugiat nam alias maiores quis error aliquam ullam excepturi quaerat iste eos. Magni praesentium dolores tenetur veritatis dicta. Officia voluptatum atque officiis, cumque at culpa architecto maiores reprehenderit saepe explicabo nisi vitae aliquid .</p>
+                    <div class="d-flex justify-content-start position-absolute bottom-0 start-0">
+                      <a class="ms-4 mb-2" href=""><img height="20px" src="./assets/icons/instagram.png" alt="instagram"></a>
+                      <a class="ms-4 mb-2" href=""><img height="20px" src="./assets/icons/linkedin.png" alt="instagram"></a>
+                      <a class="ms-4 mb-2" href=""><img height="20px" src="./assets/icons/gorjeo.png" alt="instagram"></a>
+                    </div>
                   </div>
+                  </div>
+                <article class="col-lg-2">
+                  <img class="img-comentarios" src="./assets/images/persona2.jpg" class="img-fluid rounded-start" alt="ceologo">
                 </article>
               </article>
             </article>
           
-            <article class="card mb-3 ms-5" style="max-width: 540px;">
-              <article class="row g-0">
-              <div class="col-lg-4">
-                <img src="" class="img-fluid rounded-start" alt="ceologo">
+            <article class="card coment-box-1 mb-3 m-3 " style="max-width: 90%;">
+              <article class="row">
+              <div class="col-lg-2">
+                <img class="img-comentarios" src="./assets/images/persona3.jpg" class="img-fluid rounded-start" alt="ceologo">
               </div>
-              <article class="col-lg-8">
+              <article class="col-lg-10">
                 <div class="card-body">
-                  <h5 class="card-title"></h5>
-                  <p class="card-text"></p>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis id obcaecati facilis errordsds cum dicta rem tempora? Et, ipsa dolor.</p>
+                  <h5 class="card-title">Ibai LLanos</h5>
+                  <p class="card-text">Streamer and Caster Profesional</p>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem architecto ut provident quo nesciunt impedit sint repellat ipsam delectus ea! Voluptates adipisci, nemo quam quibusdam commodi, consequatur in inventore hic culpa iure est laboriosam consectetur quis similique sit! Consequatur, quas.</p>
+                  <div class="d-flex justify-content-end position-absolute bottom-0 end-0">
+                    <a class="me-4 mb-2" href=""><img height="20px" src="./assets/icons/instagram.png" alt="instagram"></a>
+                    <a class="me-4 mb-2" href=""><img height="20px" src="./assets/icons/linkedin.png" alt="instagram"></a>
+                    <a class="me-4 mb-2" href=""><img height="20px" src="./assets/icons/gorjeo.png" alt="instagram"></a>
+                  </div>
                 </div>
               </article>
             </article>
           </article>
           
-        </section>
+              </section>
+              <!-- Nuestros equipos -->
+              <section>
+                  <article class="titulo-teams">
+                    <h1><span><h2 class="text-start">Our Teams</h2></span></h1>
+                  </article>
+              </section>
 
+              <section class="nuestros-teams container-fluid">
+                <article class="card m-5" style="width: 20rem;">
+                  <img src="./assets/images/valorantteam.jpeg" class="card-img-top" alt="valorant">
+                  <article class="card-body">
+                  <h5 class="card-title">Valorant Team</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, in!</p>
+                </article>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">VCT 2023</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+                <article class="card-body">
+                  <a href="" class="card-link">Go here</a>
+                </article>
+              </article>
+             
+              <article class="card m-5" style="width: 20rem;">
+                <img src="./assets/images/lolteams.png" class="card-img-top" alt="Lolteams">
+                <article class="card-body">
+                  <h5 class="card-title">League of Legends Team</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia vero consequatur exercitationem corporis, maiores eius laborum unde nulla repudiandae vitae.</p>
+                </article>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">World Cup 2024</li>
+                  <li class="list-group-item">A second item</li>
+                </ul>
+                <article class="card-body">
+                  <a href="" class="card-link">Go here</a>
+                </article>
+              </article>
 
-
-
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+              <article class="card m-5" style="width: 20rem;">
+                <img src="./assets/images/fifa23teams.jpg" class="card-img-top" alt="fifa23teams">
+                <article class="card-body">
+                  <h5 class="card-title">Fifa 23 Team</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, in!</p>
+                </article>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item ">World cup 2020</li>
+                </ul>
+                <article class="card-body">
+                  <a href="" class="card-link">Go here</a>
+                </article>
+              </article>
+              
+              <article class="card m-5" style="width: 20rem;">
+                <img src="./assets/images/rocket.jpg" class="card-img-top" alt="Rocketteam">
+                <article class="card-body">
+                  <h5 class="card-title">Rocket League Team</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, in!</p>
+                </article>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">a fgour item</li>
+                </ul>
+                <article class="card-body">
+                  <a href="" class="card-link">Go here</a>
+                </article>
+              </article>
+            </section>
+              
+              
+              
+              
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
             </main>
             </body>
         </html>

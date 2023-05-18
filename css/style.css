@@ -8,9 +8,9 @@ header{
     height: 7vh;
 }
 .navbar {
-    background-color: #9d0b51;
+    background-color: #9D0B51;
     border-radius: 20px;
-    box-shadow: 2px 2px 25px #E44EC3 ;
+    box-shadow: 2px 2px 20px #E44EC3 ;
 }
 .nav-link{
     color: aliceblue;
@@ -29,7 +29,6 @@ header{
     border: none !important;
 }
 
-
 .icon-config{
     width: 40px;
     height: 40px;
@@ -41,6 +40,8 @@ header{
 }
 .dropdown-menu{
     background-color: #9d0b51 !important;
+    box-shadow: 2px 2px 20px #b9419f;
+    border-radius: 20px;
 }
 .dropdown-item{
     color: aliceblue;
@@ -52,24 +53,73 @@ header{
     background-color: transparent;
 }
 
+
 /* MainContent */
 .body{
     font-family: 'PT Mono', monospace;
     background-color: #1b0112 ;
 }
+
+.main-content{
+    height: 75vh;
+}
+
+/* banner */
 .img-config {
     margin-top: 1%;
     height: 25vh !important;
 }
+/* title */
 .badge{
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
+    margin-top: 10px;
+    padding: 3vh 100vh 3vh 100vh;
     background-color: #e3ecec !important;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 100%;
 }
-.main-title{
-    width: 70%;
-    margin: 0 auto;
+
+.titulo-principal, .titulo-teams{
+    margin: 10px;
+    background-color: #E44EC3;
+    border-radius: 500px;
+    
+}
+
+/* Coments */
+
+.coment-box-1, .coment-box-2, .coment-box-3{
+    margin: 3% 7% 4% 7%;
+    border: 10px solid #9d0b5270;
+    border-radius: 30px 14px 04px 04px;
+    background-color: #ffffffb9;
+    overflow: hidden;
+}
+
+.coment-box-1, .coment-box-3{
+    border-radius:14px 30px 4px 4px;
+}
+
+.img-comentarios {
+    width: 100%;
+    height: 100%;
+    overflow: hidden ;
+}
+.titulo-teams{
+    margin: 2vh 40% 2vh 0;
+    padding-left: 20px;
+}
+
+/* Cards de teams */
+
+.nuestros-teams{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card-link{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
 }
