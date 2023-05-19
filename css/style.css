@@ -57,11 +57,11 @@ header{
 /* MainContent */
 .body{
     font-family: 'PT Mono', monospace;
-    background-color: #1b0112 ;
+    background-color: #1b0112ec ;
 }
 
 .main-content{
-    height: 75vh;
+    min-height: 100vh;
 }
 
 /* banner */
@@ -80,19 +80,22 @@ header{
 
 .titulo-principal, .titulo-teams{
     margin: 10px;
-    background-color: #E44EC3;
+    background-color: #fffafe;
     border-radius: 500px;
-    
+    box-shadow: 5px 5px 1px #000000;
+    color: #E44EC3;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
 /* Coments */
 
 .coment-box-1, .coment-box-2, .coment-box-3{
     margin: 3% 7% 4% 7%;
-    border: 10px solid #9d0b5270;
+    border: 2px solid #000000;
     border-radius: 30px 14px 04px 04px;
-    background-color: #ffffffb9;
     overflow: hidden;
+    color: rgba(245, 245, 245, 0.541);
+    box-shadow: 5px 5px 1px #000000;
 }
 
 .coment-box-1, .coment-box-3{
@@ -121,5 +124,40 @@ header{
 .card-link{
     position: absolute;
     bottom: 0;
-    right: 5%;
+    right: 1%;
 }
+
+.icon-card{
+    height: 30px;
+    width: 30px;
+}
+
+.card{
+    color: rgba(245, 245, 245, 0.541);
+    background-color: #9d0b529f;
+    border: 2px solid black;
+    box-shadow: 5px 5px 1px #000000;
+}
+
+.list-group{
+    border: none !important;
+}
+
+.list-group-item{
+    background-color: inherit;
+    border: none !important;
+    color: #ff63dd;
+}
+
+/* footer */
+
+.footer{
+    min-height: 6vh;
+    box-shadow: 10px 10px 100px #E44EC3 !important;
+}
+
+.text-muted:hover{
+    text-shadow: 5px 5px 5px #E44EC3;
+    transition: 0,3ms;
+}
+
