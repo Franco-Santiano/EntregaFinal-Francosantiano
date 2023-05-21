@@ -36,13 +36,14 @@ header{
 
 .nav-link:hover{
     text-shadow: 3px 3px 10px black;
-    transition: 0,3ms;
 }
 .dropdown-menu{
     background-color: #9d0b51 !important;
     box-shadow: 2px 2px 20px #b9419f;
     border-radius: 20px;
+    transition: 0.3ms;
 }
+
 .dropdown-item{
     color: aliceblue;
 }
@@ -51,8 +52,8 @@ header{
     text-shadow: 3px 3px 10px black;
     transition: 0,3ms;
     background-color: transparent;
-}
 
+}
 
 /* MainContent */
 .body{
@@ -149,6 +150,71 @@ header{
     color: #ff63dd;
 }
 
+
+/* Teams Page */
+/* Grid Layout of info */
+
+.info-teams{
+    margin: 6% 1% 6% 1%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 5%;
+    grid-template-areas: "valo valo valo"
+                          "lol lol lol"
+                          "fifa fifa fifa"
+                          "rocket rocket rocket";
+}
+
+.valo-team{
+    grid-area: valo;
+}
+.lol-team{
+    grid-area: lol;
+}
+.fifa-team{
+    grid-area: fifa;
+}
+.rocket-team{
+    grid-area: rocket;
+}
+
+/* Grid dentro del grid layout */
+
+.mini-grid{
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:"img title"
+                        "img  parr";
+    row-gap: 20%;
+    column-gap: 3%;
+    justify-items: stretch;
+    background-color: whitesmoke;
+    border: 5px solid black;
+    font-family:'Istok Web', sans-serif; ;
+    color: aliceblue;
+    background-color: #ff51d99a;
+    box-shadow: inset 10px 10px 70px #9D0B51;
+}
+
+.grid-title{
+    grid-area: title;
+    font-family: 'PT Mono', monospace;
+    color: #000000;
+    align-self: stretch;
+}
+
+.grid-image{
+    grid-area: img;
+}
+
+.grid-p{
+    grid-area: parr;
+}
+
+
+
+
 /* footer */
 
 .footer{
@@ -156,7 +222,7 @@ header{
     box-shadow: 10px 10px 100px #E44EC3 !important;
 }
 
-.text-muted:hover{
+.nav-foter:hover{
     text-shadow: 5px 5px 5px #E44EC3;
     transition: 0,3ms;
 }
