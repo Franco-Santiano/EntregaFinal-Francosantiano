@@ -18,7 +18,8 @@
                     <!-- Logo and button responsive -->
                     <section class="container-fluid  m-0 p-0">
                             <a class="navbar-brand d-lg-flex align-items-center" href="../index.html">
-                            <img class="icon-config" src="../assets/icons/palanca-de-mando.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"></a>
+                                <img class="icon-config" src="../assets/icons/palanca-de-mando.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                            </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -46,10 +47,7 @@
                                 <a class="nav-link" href="../pages/images.html">Images</a>
                             </li>
                             <li class="nav-item ps-3">
-                                <a class="nav-link" href="../pages/plays.html">Plays</a>
-                            </li>
-                            <li class="nav-item ps-3">
-                                <a class="nav-link" href="../pages/store.html">Store</a>
+                                <a class="nav-link" href="../pages/comunity.html">Community</a>
                             </li>
                         </ul>
                         <hr class="text-black">
@@ -59,7 +57,6 @@
                             <button class="btn p-2 m-0 d-lg-none " type="button"><img class= "icon-config" src="../assets/icons/dom.png" alt="darkmode"></button>
                         </form>
                     </section>
-                </section>
                     <section>
                         <!-- Boton modo oscuro  -->
                         <form class=" d-flex container-fluid justify-content-end ">
@@ -68,36 +65,82 @@
                         </form>
                     </section>
                 </nav>
-        </header>
-    <main class="main-content">
-        <h1>HFDAJNFADS</h1>
-
-
-
-
-
-
-
-
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    </main>
+            </header>
+            <main class="main-content">
+    <!-- Lista de juegos interactiva donde al clickear te lleva a la noticia mas reciente del juego -->
+                    <section >
+                        <article class="title-news">
+                            <h2><ul class="list-news ">
+                                <li><a class="text-decoration-none nav-link-news " href="#valo-info">Valorant</a></li>
+                                <li><a class="text-decoration-none nav-link-news" href="#lOl-info">League of Legends</a></li>
+                                <li><a class="text-decoration-none nav-link-news" href="#fifa23-info"> Fifa 23</a></li>
+                                <li><a class="text-decoration-none nav-link-news" href="#rocket-info"> Rocket League</a></li>
+                            </ul></h2>
+                        </article>
+                    </section>
+<!-- Noticias de cada juego, luego se implementara la publicacion automatica de dichas noticias -->
+                    <section class="games-news">
+                        <article class="info-box" id="valo-info">
+                            <h3 class="text-capitalize text-decoration-underline text-center">Valorant</h3>
+                                <div class="news-media">
+                                    <img class="img-news" src="../assets/images/valorant-news.jpg" alt="news-valo">
+                                </div>
+                                    <p class="text-center text-news ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tempora recusandae, quo adipisci eos aut delectus ducimus ea rem sunt dolorem aliquid labore. Veniam voluptas dolore rem asperiores. Repudiandae a inventore magnam itaque? Fuga recusandae ea deserunt illo aspernatur maxime ipsam ex totam ducimus, officia sapiente, atque voluptatibus dolorem quo reiciendis architecto at mollitia ullam debitis dolorum temporibus possimus. Id itaque saepe eius, ut inventore vitae fugit pariatur, iusto recusandae, illum voluptas temporibus. Nisi aperiam beatae perspiciatis adipisci est deleniti ea quis, nemo eaque tempore aspernatur ipsum! Nobis aliquam nulla nisi numquam, rerum, dignissimos corporis commodi a ad ipsam natus consequuntur excepturi eius provident officia labore fuga saepe aut error voluptatum, ab assumenda ducimus quis! Eos quod excepturi harum inventore fugit dolorem, quo libero necessitatibus veritatis eum laborum eius exercitationem expedita. Deserunt, asperiores. Hic enim nulla debitis fugiat doloribus, doloremque quod blanditiis provident natus nihil modi excepturi quasi illo recusandae rerum explicabo unde, labore nobis. Explicabo beatae autem enim perspiciatis iure, blanditiis commodi ut, vero expedita laudantium mollitia corrupti quia necessitatibus. Praesentium quisquam incidunt ut tempore soluta dolor aliquid recusandae, corrupti iure quae cum quas. Eveniet repellat atque voluptatibus praesentium ipsa laborum eaque quis odit facilis optio, eum nam minima, dolore iusto hic illo ratione. Sed, fugiat laboriosam? Maiores nisi rerum consectetur voluptatem error! Necessitatibus voluptate incidunt quasi illo hic dolorem ea ut blanditiis in voluptates dolore reprehenderit, mollitia, voluptas commodi eos quis qui a quae sint accusamus. Dolorem possimus dolore a itaque nesciunt eius adipisci id. Corrupti blanditiis odit iure consectetur illum illo velit, atque dolorum sint aspernatur voluptates. Eveniet, blanditiis. Magni eaque impedit quibusdam dolor excepturi error quisquam rerum ratione veritatis alias nobis qui perspiciatis quaerat praesentium sapiente deserunt corrupti similique sequi a, rem animi soluta iusto adipisci! Aliquam, doloribus officia. Voluptatum repellendus aliquam ea inventore? Quis, tenetur.</p>
+                                <div class="rate-news">
+                                    <label for="range">Rate this content</label>
+                                    <input type="range" name="rate" id="rate">
+                                </div>
+                        </article>
+                        <article class="info-box" id="lOl-info">
+                            <h3 class="text-capitalize text-decoration-underline  text-center" >League of Legends</h3>
+                                <div class="news-media">
+                                    <img class="img-news" src="../assets/images/lolnews.jpg" alt="Leagueinfo">
+                                </div>
+                                    <p class="text-center text-news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quasi soluta aliquam magnam saepe deserunt quos reprehenderit omnis. Odit est ut consequatur labore maiores fugit, facilis ipsam consequuntur itaque, molestiae quaerat cum temporibus beatae porro! Accusamus ad sequi accusantium laudantium impedit reprehenderit voluptates nam iste quod provident maiores reiciendis blanditiis praesentium aliquam porro consequuntur explicabo totam cum deleniti quo, labore fugit? Dolores recusandae, in debitis non repellendus sed enim commodi eligendi obcaecati animi, consequatur, tempore impedit numquam saepe. Adipisci delectus minima repellat sequi ipsa cumque sapiente corporis iure ipsum magnam tempora voluptatibus, earum quibusdam fuga nihil omnis obcaecati id voluptates rem! Dignissimos maxime numquam explicabo eius tempora temporibus et quam fuga, quod magni ea assumenda quibusdam itaque hic error quidem repudiandae? Placeat adipisci optio quod sapiente repellendus porro esse minus laborum reprehenderit voluptas dignissimos, reiciendis, suscipit, quaerat ea vel eius. Consectetur laudantium mollitia nemo quisquam, iusto quam nam aperiam, est, ea dolores repellat enim accusantium? Accusantium sapiente alias perferendis earum. Nemo dolor sit cupiditate? Nisi aut, pariatur eligendi dignissimos velit molestiae error alias exercitationem facilis rem veritatis perferendis architecto sunt saepe labore repudiandae minus cupiditate ipsa tempora quam odit aliquid eum. Neque, accusamus facere impedit doloremque blanditiis facilis nisi illo quibusdam amet cum quisquam voluptatem? Sunt iure, eaque ut quia error expedita. Molestias illo odit quidem autem amet reiciendis debitis sed aperiam consectetur rem? At quas repellendus iusto nemo ipsum, alias, velit, impedit necessitatibus in nostrum provident perferendis magnam blanditiis laboriosam nobis nihil ipsam architecto distinctio maiores facilis! Porro, suscipit.</p>
+                                <div class="rate-news">
+                                    <label for="range">Rate this content</label>
+                                    <input type="range" name="rate" id="rate">
+                                </div>
+                        </article>
+                        <article class="info-box"  id="fifa23-info">
+                            <h3 class="text-capitalize text-decoration-underline text-center">Fifa 23</h3>
+                                <div class="news-media">
+                                    <img class="img-news" src="../assets/images/fifa-news.jpg" alt="news-fifa">
+                                </div>
+                                    <p class="text-center text-news ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, consequatur earum. Nostrum explicabo repellendus quae! Perferendis eum debitis doloribus, fugiat, totam odit expedita corporis neque iure quisquam similique adipisci, deleniti provident voluptatem nemo voluptatibus tempora numquam vitae ducimus harum? Atque perspiciatis corporis, est porro rem architecto dolorum, laudantium illo fuga aut at velit inventore veniam asperiores reiciendis earum impedit ab quasi. Dolorum, unde? Libero deserunt illum quos, quae odio officia expedita molestias quasi excepturi accusamus eaque, explicabo aut numquam maiores beatae similique maxime! Enim nesciunt ad cum, quos dolor quisquam ducimus illo eaque ullam inventore quidem unde eum voluptatibus soluta neque! Ad cumque fuga doloribus sunt natus ut quam veniam qui sequi possimus repudiandae nemo accusantium quod, eligendi error aut, laudantium non explicabo? Iure nesciunt praesentium eaque unde ad accusamus vitae, officia deserunt, expedita earum aut. Dignissimos laborum corrupti, minima id quo suscipit est veniam amet molestias, impedit maiores beatae rem voluptatibus dolorum incidunt, labore tempore sequi? Facere qui earum enim est eveniet dolore ipsam voluptatem repellat, sed impedit aliquid sint ex deleniti ullam dolorum autem inventore sunt! Nobis, cum. Quisquam, dolorem nesciunt. Molestias suscipit, ullam excepturi error, explicabo ex ut, est doloremque iusto reprehenderit dolor repellat beatae illo culpa mollitia labore impedit aliquam eos in voluptatibus dicta delectus laboriosam necessitatibus autem? Similique tempore voluptates neque sit expedita, quaerat libero. Suscipit accusantium a quia saepe. Natus, exercitationem eius temporibus nesciunt quae voluptatem tempora dolor odit nihil sapiente est. Ratione sed voluptates, exercitationem officia expedita quisquam obcaecati ullam corporis quaerat nihil aspernatur dicta culpa, tempora sit, voluptate cum consequatur quas voluptas natus repudiandae a voluptatibus necessitatibus atque. Voluptate, recusandae modi. Ex illo laborum minima tempore. Vel assumenda doloremque illum sapiente ipsa voluptatem repudiandae esse ipsam cupiditate aperiam. Non, animi eius! Assumenda eaque vitae delectus ipsam architecto saepe, quibusdam quo sequi repellat. Nostrum culpa nihil magni quas, ratione eveniet a repellendus minima quaerat harum nemo illo. Dolor esse itaque, assumenda obcaecati porro facilis soluta? Libero facilis beatae, reiciendis animi quidem vitae necessitatibus magnam facere repellat aspernatur deserunt dicta expedita ipsum nemo eum enim ex placeat praesentium, illo voluptatum quibusdam sed distinctio sapiente? Fugit atque doloribus consequatur similique nemo architecto. Adipisci vero fugiat ea possimus aliquam perferendis, dolores commodi sint enim excepturi, eaque ipsam veritatis? Maxime veniam magni numquam nemo illo debitis labore tempore sunt repellendus repellat est, asperiores corporis rerum veritatis pariatur at corrupti id placeat omnis? Molestiae voluptates facilis accusantium nobis.</p>
+                                <div class="rate-news">
+                                    <label for="range">Rate this content</label>
+                                    <input type="range" name="rate" id="rate">
+                                </div>
+                        </article>
+                        <article class="info-box"  id="rocket-info">
+                            <h3 class="text-capitalize text-decoration-underline text-center">Rocket League</h3>
+                                <div class="news-media">
+                                    <img class="img-news" src="../assets/images/rocketinfo.jpeg" alt="">
+                                </div>
+                                    <p class="text-center text-news ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odio ducimus blanditiis impedit dicta voluptatem facilis odit ex, in deserunt libero similique a accusantium! Repellendus laborum alias, sint inventore sit maxime deserunt iste assumenda fugiat voluptas labore accusantium, doloribus perspiciatis cum illum nostrum aliquid perferendis. Nobis, tenetur dolorem cupiditate non eius cum doloribus saepe mollitia, beatae voluptas unde incidunt! Cupiditate quisquam minus rem possimus iste! Corporis dolore, cupiditate architecto dolorum, delectus ut tempore autem rem tempora numquam placeat reiciendis ab quis accusantium fugit ullam mollitia! Omnis, repellendus saepe ea, eligendi culpa earum quas dolores ipsa ipsam quidem blanditiis aperiam voluptatem possimus sunt aliquam! Quibusdam sequi adipisci hic placeat velit sint beatae minus, quisquam pariatur inventore reiciendis, maiores cumque recusandae eos, error facilis architecto suscipit facere.</p>
+                                <div class="rate-news">
+                                    <label for="range">Rate this content</label>
+                                    <input type="range" name="rate" id="rate">
+                                </div>
+                        </article>
+                    </section>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+            </main>
                 <!-- Footer -->
-                <footer class="footer d-flex flex-wrap justify-content-between align-items-center py-0 my-0 ps-2 bg-black">
+            <!-- Footer -->
+            <footer class="footer d-flex flex-wrap justify-content-between align-items-center py-0 my-0 ps-2 bg-black">
                     <p class="col-md-5 mb-0 text-muted">© 2023 Company, Inc</p>
-                    <a href="#" class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
-                      <img class="icon-config" src="../assets/icons/palanca-de-mando.png" alt="">
-                    </a>
-                    <ul class="nav col-md-5 justify-content-end">
-                      <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a></li>
-                      <li class="nav-item"><a href="../pages/news.html" class="nav-link px-2 text-muted">News</a></li>
-                      <li class="nav-item"><a href="../pages/teams.html" class="nav-link px-2 text-muted">Teams</a></li>
-                      <li class="nav-item"><a href="../pages/images.html" class="nav-link px-2 text-muted">Images</a></li>
-                      <li class="nav-item"><a href="../pages/plays.html" class="nav-link px-2 text-muted">Plays</a></li>
-                      <li class="nav-item"><a href="../pages/store.html" class="nav-link px-2 text-muted">Store</a></li>
-                    </ul>
-                  </footer>
+                <a href="#" class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
+                    <img class="icon-config" src="../assets/icons/palanca-de-mando.png" alt="">
+                </a>
+                <ul class="nav col-md-5 justify-content-end">
+                    <li class="nav-item"><a href="../index.html" class="nav-foter nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="../pages/news.html" class="nav-foter nav-link px-2 text-muted">News</a></li>
+                    <li class="nav-item"><a href="../pages/teams.html" class="nav-foter nav-link px-2 text-muted">Teams</a></li>
+                    <li class="nav-item"><a href="../pages/images.html" class="nav-foter nav-link px-2 text-muted">Images</a></li>
+                    <li class="nav-item"><a href="../pages/comunity.html" class="nav-foter nav-link px-2 text-muted">Community</a></li>
+                </ul>
+            </footer>
     </body>
 </html>
