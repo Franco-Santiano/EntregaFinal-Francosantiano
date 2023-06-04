@@ -1,0 +1,22 @@
+/* Community page */
+.register{
+    text-align: start;
+    color: $color-text-nav;
+    padding-top: 1%;
+    margin: 5% 0 2% 3%;
+    .form-reg{
+        display: $flex;
+        flex-flow: $flow-flex-c;
+        align-content: start;
+        margin-bottom: 3%;
+        .input-comm{
+            display: $flex;
+            flex-flow: $flow-flex-c;
+            box-shadow: $shadow-text;
+            border: $border-boxes;
+            background-color: rgb(54, 2, 56);
+            border-radius: 10px;
+            margin: 0.5%;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+/* Index page */
+/* banner */
+.img-config {
+    margin-top: 1%;
+    height: 25vh !important;
+}
+
+/* title */
+
+.titulo-principal, .titulo-teams{
+    margin: 10px;
+    background-color: #fffafe;
+    border-radius: 500px;
+    box-shadow: 5px 5px 1px #000000;
+    color: $title-color;
+    font-family: $typo-firasans;
+}
+
+/* Coments */
+
+.coment-box-1, .coment-box-2, .coment-box-3{
+    margin: 3% 7% 4% 7%;
+    border: $border-boxes;
+    border-radius: 30px 14px 04px 04px;
+    overflow: hidden;
+    color: rgba(245, 245, 245, 0.541);
+    box-shadow: $card-shadow;
+    .coment-box-1, .coment-box-3{
+        border-radius:14px 30px 4px 4px;
+    }
+    .img-comentarios {
+        width: 100%;
+        height: 100%;
+        overflow: hidden ;
+    }
+}
+
+/*Subtitle index*/
+.titulo-teams{
+    margin: 2vh 40% 2vh 0;
+    padding-left: 20px;
+}
+/* Cards de teams */
+.card{
+    color: rgba(245, 245, 245, 0.541);
+    background-color: #9d0b529f;
+    border: $border-boxes;
+    box-shadow: $card-shadow;
+}
+
+.nuestros-teams{
+    position: relative;
+    display: $flex;
+    flex-flow: $flow-flex;
+    justify-content: space-around;
+    .list-group{
+        border: none !important;
+        .list-group-item{
+            background-color: inherit;
+            border: none !important;
+            color: #ff63dd;
+        }
+    }
+    .card-link{
+        position: absolute;
+        bottom: 0;
+        right: 1%;
+    }
+}
+
+
+
+

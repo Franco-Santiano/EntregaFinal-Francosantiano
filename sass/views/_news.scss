@@ -1,0 +1,65 @@
+/* News Pages */
+.title-news{
+    margin: 3% 8% 1% 8%;
+    background-color: #b9419f93;
+    border: 6px solid black;
+    border-radius: $news-border;
+    box-shadow: $news-shadow;
+    .list-news{
+        padding-top: 1%;
+        display: $flex;
+        flex-flow: $flow-flex;
+        justify-content: space-around;
+        text-decoration: none !important;
+        list-style: none;
+        .nav-link-news {
+            color: #f3f3f3 ;
+            font-size: xx-large;
+            &:hover {
+                color: #000000;
+                text-decoration: underline #E44EC3 !important;
+                transition: 0.10ms;
+            }
+        }
+    }
+}
+
+.games-news{
+    display: $flex;
+    flex-flow: $flow-flex-c;
+    .info-box{
+        display: $flex;
+        flex-flow: $flow-flex-c;
+        margin: 3% 2% 0 2%;
+        background-color: rgb(255, 151, 238);
+        border: 7px solid black;
+        box-shadow: $news-shadow;
+        .text-news{
+            padding: 0 1% 0 1%;
+            text-align: justify !important;
+        }
+        .img-news{
+            height: 30vw !important;
+            width: 55vw !important;
+            margin-bottom: 3%;
+        }
+        .news-media{
+            align-self: center;
+        }
+    }
+        .rate-news{
+            padding: 1% 2% 1% 2%;
+            background-color: #9d0b52d2;
+            align-self: center;
+            border: $border-boxes;
+            border-radius: $news-border;
+            margin: 1% 0 1% 0;
+        &:hover{
+            background-color: #df448f;
+            border: 5px solid #d100a4;
+            border-radius: 0;
+            transition: 350ms;
+        }
+        }
+}
+

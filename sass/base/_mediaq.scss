@@ -1,0 +1,44 @@
+/* Media queries */
+
+/* Grid of teams */
+@media (max-width: 1024px){
+    .mini-grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:    "title"
+                                "img"
+                                "parr";
+        row-gap: 1%;
+        border: 5px solid black;
+        font-family:$typo-istok;
+        color: $color-text-nav;
+        background-color: #ff51d99a;
+        box-shadow: inset 10px 10px 70px #9D0B51;
+    }
+    .grid-title{
+        padding: 1% 0 0 3%;
+        grid-area: title;
+    }
+    .grid-p{
+        text-align: justify;
+        padding: 1% 3% 3% 1%;
+        grid-area: parr;
+        font-size: 1vh;
+    }
+    .grid-image{
+        padding-left: 33.33%;
+        grid-area: img;
+    }
+    .img-teams{
+        height: 20vw;
+        width: 30vw;
+        display: inline-block;
+    }
+    .footer{
+        margin-top: 5%;
+    }
+    .img-news{
+        height: 25vh;
+        width: 32.5vh;
+    }
+}

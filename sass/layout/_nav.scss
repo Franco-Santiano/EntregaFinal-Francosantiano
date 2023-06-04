@@ -1,0 +1,46 @@
+/* NavBar */
+header{
+    height: 7vh;
+    .navbar {
+        background-color: $back-color ;
+        border-radius: $radius-nav;
+        box-shadow: $shadow-box;
+        .navbar-brand{
+            padding-left: 50px;
+        }
+    }
+}
+/*Nav-icon*/
+.icon-config{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-link{
+    color: $color-text-nav;
+    &:hover{
+        text-shadow: $shadow-text;
+    }
+}
+
+.navbar-collapse{
+    font-family:$typo-istok;
+}
+
+/*Dropdow menu*/
+.dropdown-menu{
+    background-color: $back-color !important;
+    box-shadow: $shadow-box;
+    border-radius: $radius-nav;
+    transition: 0.3ms;
+    .dropdown-item{
+        color: $color-text-nav;
+        &:hover{
+            color: #000000;
+            text-shadow: $shadow-text;
+            transition: 0,3ms;
+            background-color: transparent;
+        }
+    }
+
+}

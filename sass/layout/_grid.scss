@@ -1,0 +1,61 @@
+/* Teams Page */
+/* Grid Layout of info */
+
+.info-teams{
+    margin: 6% 1% 10% 1%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4,auto);
+    gap: 1%;
+    grid-template-areas: "valo"
+                          "lol"
+                          "fifa"
+                          "rocket";
+    .valo-team{
+    grid-area: valo;
+}
+.lol-team{
+    grid-area: lol;
+}
+.fifa-team{
+    grid-area: fifa;
+}
+.rocket-team{
+    grid-area: rocket;
+}
+}
+
+/* Grid inside of grid layout */
+
+.mini-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:"title title"
+                        "img  parr";
+    column-gap: 1%;
+    border: 5px solid black;
+    color: aliceblue;
+    background-color: #ff51d99a;
+    box-shadow: inset 10px 10px 70px #9D0B51;
+}
+
+.grid-title{
+    padding: 1% 0 0 3%;
+    grid-area: title;
+    font-family: $typo-istok;
+}
+
+.grid-p{
+    grid-area: parr;
+    font-size: 2vh;
+}
+
+.grid-image{
+    grid-area: img;
+}
+.img-teams{
+    border: 2px solid black;
+    height: 20vw;
+    width: 30vw;
+    display: inline-block;
+}
