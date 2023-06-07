@@ -1,8 +1,7 @@
 /* Index page */
 /* banner */
 .img-config {
-    margin-top: 1%;
-    height: 25vh !important;
+    height: 92vh !important;
 }
 
 /* title */
@@ -19,11 +18,10 @@
 /* Coments */
 
 .coment-box-1, .coment-box-2, .coment-box-3{
-    margin: 3% 7% 4% 7%;
+    margin: 3% 1% 4% 1%;
     border: $border-boxes;
     border-radius: 30px 14px 04px 04px;
     overflow: hidden;
-    color: rgba(245, 245, 245, 0.541);
     box-shadow: $card-shadow;
     .coment-box-1, .coment-box-3{
         border-radius:14px 30px 4px 4px;
@@ -43,7 +41,7 @@
 /* Cards de teams */
 .card{
     color: rgba(245, 245, 245, 0.541);
-    background-color: #9d0b529f;
+    background-color: #9d0b52e0;
     border: $border-boxes;
     box-shadow: $card-shadow;
 }

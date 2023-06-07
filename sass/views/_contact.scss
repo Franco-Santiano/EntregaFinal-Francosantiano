@@ -1,11 +1,14 @@
 .locate{
-    display: $flex;
-    flex-flow: $flow-flex-c-nw;
-    height: 29vw;
-    width: 100%;
+    margin:7% 3% 2% 1%;
     color: $color-text-nav;
     text-decoration: underline #E44EC3;
     text-shadow: 4px 4px 20px rgb(0, 0, 0);
-    padding: 2% 1% 2% 1%;
     text-align: start;
+    padding-left: 5%;
+}
+
+.maps-size{
+    padding: 0;
+    width: 60vw;
+    height: 30vw;
 }

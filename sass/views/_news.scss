@@ -47,19 +47,7 @@
             align-self: center;
         }
     }
-        .rate-news{
-            padding: 1% 2% 1% 2%;
-            background-color: #9d0b52d2;
-            align-self: center;
-            border: $border-boxes;
-            border-radius: $news-border;
-            margin: 1% 0 1% 0;
-        &:hover{
-            background-color: #df448f;
-            border: 5px solid #d100a4;
-            border-radius: 0;
-            transition: 350ms;
         }
-        }
-}
+
+
 

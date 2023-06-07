@@ -4,17 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GAMZ</title>
+    <!-- Fuentes (typhographies) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@1,900&family=Istok+Web:ital@1&family=PT+Mono&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- AOS animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Main Css -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="body">
             <!-- Navigation bar and logo-->
             <header>
-                <nav class=" navbar fixed-top navbar-collapse navbar-expand-lg mt-3 mb-3 ms-5 me-5 ">
+                <nav class=" navbar fixed-top navbar-collapse navbar-expand-lg mt-3 mb-3 ms-5 me-5 " data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                     <!-- Logo and button responsive -->
                     <section class="container-fluid  m-0 p-0">
                             <a class="navbar-brand d-lg-flex align-items-center" href="../index.html">
@@ -68,20 +73,21 @@
             </header>
             <main class="main-content">
     <!-- Lista de juegos interactiva donde al clickear te lleva a la noticia mas reciente del juego -->
-                    <section >
-                        <article class="title-news">
-                            <h2><ul class="list-news ">
+                    <section data-aos="fade-down">
+                        <article class="title-news" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                            <h1><ul class="list-news">
                                 <li><a class="text-decoration-none nav-link-news " href="#valo-info">Valorant</a></li>
                                 <li><a class="text-decoration-none nav-link-news" href="#lOl-info">League of Legends</a></li>
                                 <li><a class="text-decoration-none nav-link-news" href="#fifa23-info"> Fifa 23</a></li>
                                 <li><a class="text-decoration-none nav-link-news" href="#rocket-info"> Rocket League</a></li>
-                            </ul></h2>
+                            </ul></h1>
                         </article>
                     </section>
 <!-- Noticias de cada juego, luego se implementara la publicacion automatica de dichas noticias -->
-                    <section class="games-news">
-                        <article class="info-box" id="valo-info">
-                            <h3 class="text-capitalize text-decoration-underline text-center">Valorant</h3>
+                    <section class="games-news mb-3">
+                        <!-- News 1 -->
+                        <article class="info-box" data-aos="fade-down" id="valo-info">
+                            <h2 class="text-capitalize text-decoration-underline text-center">Valorant</h2>
                                 <div class="news-media">
                                     <img class="img-news" src="../assets/images/valorant-news.jpg" alt="news-valo">
                                 </div>
@@ -91,8 +97,9 @@
                                     <input type="range" name="rate" id="rate">
                                 </div>
                         </article>
-                        <article class="info-box" id="lOl-info">
-                            <h3 class="text-capitalize text-decoration-underline  text-center" >League of Legends</h3>
+                        <!-- News 2 -->
+                        <article class="info-box" data-aos="fade-down" id="lOl-info">
+                            <h2 class="text-capitalize text-decoration-underline  text-center" >League of Legends</h2>
                                 <div class="news-media">
                                     <img class="img-news" src="../assets/images/lolnews.jpg" alt="Leagueinfo">
                                 </div>
@@ -102,8 +109,9 @@
                                     <input type="range" name="rate" id="rate">
                                 </div>
                         </article>
-                        <article class="info-box"  id="fifa23-info">
-                            <h3 class="text-capitalize text-decoration-underline text-center">Fifa 23</h3>
+                        <!-- News 3 -->
+                        <article class="info-box" data-aos="fade-down"  id="fifa23-info">
+                            <h2 class="text-capitalize text-decoration-underline text-center">Fifa 23</h2>
                                 <div class="news-media">
                                     <img class="img-news" src="../assets/images/fifa-news.jpg" alt="news-fifa">
                                 </div>
@@ -113,8 +121,9 @@
                                     <input type="range" name="rate" id="rate">
                                 </div>
                         </article>
-                        <article class="info-box"  id="rocket-info">
-                            <h3 class="text-capitalize text-decoration-underline text-center">Rocket League</h3>
+                        <!-- News 4 -->
+                        <article class="info-box" data-aos="fade-down"  id="rocket-info">
+                            <h2 class="text-capitalize text-decoration-underline text-center">Rocket League</h2>
                                 <div class="news-media">
                                     <img class="img-news" src="../assets/images/rocketinfo.jpeg" alt="">
                                 </div>
@@ -125,7 +134,13 @@
                                 </div>
                         </article>
                     </section>
+                        <!-- Bootstrap -->
                         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+                        <!-- AOS Animations -->
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                            AOS.init();
+                        </script>
             </main>
                 <!-- Footer -->
             <!-- Footer -->

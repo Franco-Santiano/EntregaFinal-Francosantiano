@@ -14,7 +14,7 @@
   flex-direction: column;
   min-height: 100vh;
   font-family: "PT Mono", monospace;
-  background-color: rgba(27, 1, 18, 0.9254901961);
+  background-image: linear-gradient(to bottom, rgba(27, 1, 18, 0.9254901961), #7a0551);
 }
 .body .main-content {
   min-height: 100vh;
@@ -26,10 +26,40 @@
   border: none !important;
 }
 
-/*Navigation variables*/
-/*index page*/
-/*news page*/
-/*Structure flex*/
+/*Index page*/
+.team-anim:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.5s !important;
+}
+
+/*News page rate scroll*/
+.rate-news {
+  padding: 1% 2% 1% 2%;
+  background-color: rgba(157, 11, 82, 0.8235294118);
+  align-self: center;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  margin: 1% 0 1% 0;
+}
+.rate-news:hover {
+  background-color: #df448f;
+  border: 5px solid #d100a4;
+  border-radius: 0;
+  transition: 350ms;
+}
+
+/*Community page-register card*/
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 /* NavBar */
 header {
   height: 7vh;
@@ -77,15 +107,10 @@ header .navbar .navbar-brand {
   background-color: transparent;
 }
 
-/*Navigation variables*/
-/*index page*/
-/*news page*/
-/*Structure flex*/
 /* Index page */
 /* banner */
 .img-config {
-  margin-top: 1%;
-  height: 25vh !important;
+  height: 92vh !important;
 }
 
 /* title */
@@ -100,11 +125,10 @@ header .navbar .navbar-brand {
 
 /* Coments */
 .coment-box-1, .coment-box-2, .coment-box-3 {
-  margin: 3% 7% 4% 7%;
+  margin: 3% 1% 4% 1%;
   border: 2px solid #000000;
   border-radius: 30px 14px 4px 4px;
   overflow: hidden;
-  color: rgba(245, 245, 245, 0.541);
   box-shadow: 5px 5px 1px #000000;
 }
 .coment-box-1 .coment-box-1, .coment-box-1 .coment-box-3, .coment-box-2 .coment-box-1, .coment-box-2 .coment-box-3, .coment-box-3 .coment-box-1, .coment-box-3 .coment-box-3 {
@@ -125,7 +149,7 @@ header .navbar .navbar-brand {
 /* Cards de teams */
 .card {
   color: rgba(245, 245, 245, 0.541);
-  background-color: rgba(157, 11, 82, 0.6235294118);
+  background-color: rgba(157, 11, 82, 0.8784313725);
   border: 2px solid #000000;
   box-shadow: 5px 5px 1px #000000;
 }
@@ -207,10 +231,6 @@ header .navbar .navbar-brand {
   display: inline-block;
 }
 
-/*Navigation variables*/
-/*index page*/
-/*news page*/
-/*Structure flex*/
 /* News Pages */
 .title-news {
   margin: 3% 8% 1% 8%;
@@ -261,20 +281,6 @@ header .navbar .navbar-brand {
 .games-news .info-box .news-media {
   align-self: center;
 }
-.games-news .rate-news {
-  padding: 1% 2% 1% 2%;
-  background-color: rgba(157, 11, 82, 0.8235294118);
-  align-self: center;
-  border: 2px solid #000000;
-  border-radius: 50px;
-  margin: 1% 0 1% 0;
-}
-.games-news .rate-news:hover {
-  background-color: #df448f;
-  border: 5px solid #d100a4;
-  border-radius: 0;
-  transition: 350ms;
-}
 
 /*Page image*/
 .image-title {
@@ -289,47 +295,58 @@ header .navbar .navbar-brand {
   margin: 3% 8% 5% 8%;
 }
 
-/*Navigation variables*/
-/*index page*/
-/*news page*/
-/*Structure flex*/
 /* Community page */
 .register {
-  text-align: start;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2% 2% 0 2%;
+  background-color: black;
+  border-radius: 20px;
+  margin: 5% 0% 2% 4%;
   color: aliceblue;
-  padding-top: 1%;
-  margin: 5% 0 2% 3%;
-}
-.register .form-reg {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: start;
-  margin-bottom: 3%;
-}
-.register .form-reg .input-comm {
-  display: flex;
-  flex-flow: column wrap;
-  box-shadow: 3px 3px 10px black;
-  border: 2px solid #000000;
-  background-color: rgb(54, 2, 56);
-  border-radius: 10px;
-  margin: 0.5%;
 }
 
-/*Navigation variables*/
-/*index page*/
-/*news page*/
-/*Structure flex*/
-.locate {
+.register::before {
+  content: "";
+  position: absolute;
+  height: 660px;
+  width: 720px;
+  animation: rotation 3.2s linear infinite;
+  box-shadow: inset 500px 300px 500px rgb(255, 0, 255);
+  filter: blur(200px);
+  z-index: -1;
+}
+
+.register::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.form-reg {
   display: flex;
-  flex-flow: column nowrap;
-  height: 29vw;
-  width: 100%;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  align-content: stretch;
+  margin-top: 7%;
+  font-size: large;
+}
+
+.locate {
+  margin: 7% 3% 2% 1%;
   color: aliceblue;
   text-decoration: underline #E44EC3;
   text-shadow: 4px 4px 20px rgb(0, 0, 0);
-  padding: 2% 1% 2% 1%;
   text-align: start;
+  padding-left: 5%;
+}
+
+.maps-size {
+  padding: 0;
+  width: 60vw;
+  height: 30vw;
 }
 
 /* footer */

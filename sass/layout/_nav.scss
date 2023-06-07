@@ -1,7 +1,7 @@
 /* NavBar */
 header{
     height: 7vh;
-    .navbar {
+    .navbar{
         background-color: $back-color ;
         border-radius: $radius-nav;
         box-shadow: $shadow-box;
@@ -10,6 +10,7 @@ header{
         }
     }
 }
+
 /*Nav-icon*/
 .icon-config{
     width: 30px;

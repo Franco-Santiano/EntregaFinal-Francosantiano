@@ -1,22 +1,39 @@
 /* Community page */
 .register{
-    text-align: start;
+    position: relative;
+    overflow: hidden;
+    display: $flex;
+    flex-flow: $flow-flex-c;
+    padding: 2% 2% 0 2%;
+    background-color: black;
+    border-radius: $radius-nav;
+    margin: 5% 0% 2% 4%;
     color: $color-text-nav;
-    padding-top: 1%;
-    margin: 5% 0 2% 3%;
-    .form-reg{
-        display: $flex;
-        flex-flow: $flow-flex-c;
-        align-content: start;
-        margin-bottom: 3%;
-        .input-comm{
-            display: $flex;
-            flex-flow: $flow-flex-c;
-            box-shadow: $shadow-text;
-            border: $border-boxes;
-            background-color: rgb(54, 2, 56);
-            border-radius: 10px;
-            margin: 0.5%;
-        }
-    }
+
 }
+    .register::before{
+        content: '';
+        position: absolute;
+        height: 660px;
+        width: 720px;
+        animation: rotation 3.2s linear infinite;
+        box-shadow: inset 500px 300px 500px rgb(255, 0, 255);
+        filter: blur(200px);
+        z-index: -1;
+    }
+    .register::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+    }
+
+.form-reg{
+    display: $flex;
+    flex-flow: $flow-flex-c;
+    align-items: flex-start;
+    align-content: stretch;
+    margin-top: 7%;
+    font-size: large;
+}
+
+
