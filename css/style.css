@@ -111,7 +111,7 @@ header .navbar .navbar-brand {
 /* banner */
 .img-config {
   width: 100vw;
-  height: 90vw;
+  height: 60vw;
 }
 
 /* title */
@@ -234,7 +234,7 @@ header .navbar .navbar-brand {
 
 /* News Pages */
 .title-news {
-  margin: 3% 8% 1% 8%;
+  margin: 10% 8% 1% 8%;
   background-color: rgba(185, 65, 159, 0.5764705882);
   border: 6px solid black;
   border-radius: 50px;
