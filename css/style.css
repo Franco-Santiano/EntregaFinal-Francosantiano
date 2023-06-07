@@ -110,12 +110,13 @@ header .navbar .navbar-brand {
 /* Index page */
 /* banner */
 .img-config {
-  height: 92vh !important;
+  width: 100vw;
+  height: 90vw;
 }
 
 /* title */
 .titulo-principal, .titulo-teams {
-  margin: 10px;
+  margin: 5%;
   background-color: #fffafe;
   border-radius: 500px;
   box-shadow: 5px 5px 1px #000000;
