@@ -43,7 +43,7 @@
     }
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1620px){
     .register{
         display: $flex;
         flex-flow: $flow-flex-c;
@@ -52,12 +52,13 @@
     }
     .locate{
         display:$flex;
-        flex-flow: $flow-flex-c;
+        flex-flow: $flow-flex;
         align-items: center;
         align-content: center;
+        margin-left: 25%;
     }
-    .maps-size{
-        height: 40vw;
-        width: 1000vw;
-    }
+}
+@media (max-width: 768px){
+    .locate{
+        margin-left: 10%;}
 }

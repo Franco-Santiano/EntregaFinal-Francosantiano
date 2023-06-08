@@ -403,7 +403,7 @@ header .navbar .navbar-brand {
     width: 32.5vh;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1620px) {
   .register {
     display: flex;
     flex-flow: column wrap;
@@ -412,13 +412,15 @@ header .navbar .navbar-brand {
   }
   .locate {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: center;
     align-content: center;
+    margin-left: 25%;
   }
-  .maps-size {
-    height: 40vw;
-    width: 50vw;
+}
+@media (max-width: 768px) {
+  .locate {
+    margin-left: 10%;
   }
 }
 
