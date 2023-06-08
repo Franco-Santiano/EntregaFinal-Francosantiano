@@ -42,3 +42,22 @@
         width: 32.5vh;
     }
 }
+
+@media (max-width: 1280px){
+    .register{
+        display: $flex;
+        flex-flow: $flow-flex-c;
+        align-content: center;
+        margin: 1% auto;
+    }
+    .locate{
+        display:$flex;
+        flex-flow: $flow-flex-c;
+        align-items: center;
+        align-content: center;
+    }
+    .maps-size{
+        height: 40vw;
+        width: 1000vw;
+    }
+}
